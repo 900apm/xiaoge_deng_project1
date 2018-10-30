@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>floatyfloat</title>
+  <!-- google web fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <!-- anime on scroll js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- stylesheet is last -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <section class="first">
+
+        <header class=" wrapper clearfix">
+
+          <h2 class="logo">shutter</h2>
+
+          <!-- desktop nav -->
+          <nav>
+            <ul>
+              <li> <a href=""><p>home</p></a></li>
+              <li> <a href=""><p>about</p></a></li>
+              <li> <a href=""><p>blog</p></a></li>
+              <li> <a href=""><p>contact</p></a></li>
+            </ul>
+          </nav>
+          
+          <!-- mobile full screen menu -->
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+
+            </ul>
+          </div>
+          
+          <!-- hamburger menu for mobile -->
+          <span onclick="openNav()" class="hiddenBurger">
+            <i class="fas fa-bars"></i>
+          </span>
+
+        </header>
+        
+        <!-- desktop social media menu -->
+        <div class="socialMedia clearfix">
+          <ul>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="bigLogo wrapper">
+          <p>welcome to</p>
+          <h1>shutter</h1>
+        </div>
+
+    </section>
+
+    <section class="second padder" data-aos="fade-up">
+      <h2>about shutter</h2>
+
+      <p class="secondWrapper lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
+      consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt
+      sem, a blandit sem. Quisque interdum orci.</p>
+
+      <a href="" class="button">
+        <p>find out more</p>
+      </a>
+
+    </section>
+
+    <section class="third wrapper clearfix padder" data-aos="fade-up">
+      <figure><img src="./assets/image-2@3x.png" alt=""></figure>
+      <figure><img src="./assets/image-3@3x.png" alt=""></figure>
+      <figure><img src="./assets/image-4@3x.png" alt=""></figure>
+    </section>
+
+    <section class="fourth padder" data-aos="fade-up">
+      <ul class="wrapper clearfix">
+
+        <li>
+          <a href=""><i class="far fa-images"></i></a>
+          <ul><a href="">gallery</a></ul>
+        </li>
+
+        <li>
+          <a href=""><i class="fas fa-camera"></i></a>
+          <ul><a href="">photo tips</a></ul>
+        </li>
+
+        <li>
+          <a href=""><i class="far fa-image"></i></a>
+          <ul><a href="">about</a></ul>
+        </li>
+
+        <li>
+          <a href=""><i class="fas fa-envelope"></i></a>
+          <ul><a href="">contact</a></ul>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="fifth wrapper padder" data-aos="fade-up">
+      <div class="content clearfix">
+
+        <figure>
+          <img src="./assets/image-6@3x.png" alt="">
+        </figure>
+
+        <div class="contentText">
+          <h2>behind the lens</h2>
+          <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.</p>
+
+          <a href="" class="button">
+            <p>find out more</p>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="sixth clearfix" data-aos="fade-up">
+
+      <figure>
+        <img src="./assets/image-7@3x.png" alt="">
+      </figure>
+      
+      <div class="content">
+        <h2>nature & scenery</h2>
+
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
+        consequat vestibulum.</p>
+
+        <a href="" class="button">
+          <p>read more</p>
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="seventh clearfix" data-aos="fade-up">
+
+      <figure>
+        <img src="./assets/image-8@3x.png" alt="">
+      </figure>
+
+      <div class="content clearfix">
+        <h2>candid photography</h2>
+    
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
+    
+        <a href="" class="button">
+          <p>read more</p>
+        </a>
+    
+      </div>
+  
+    </section>
+
+    <footer data-aos="fade-up">
+
+      <div class="wrapper clearfix">
+
+        <div class="centerHidden">
+          <h2>stay updated</h2>
+          <p>Subscribe to our newsletter to stay updated.</p>
+          <form action="">
+        
+            <input type="email" name="email" placeholder="email address" value="email address">
+        
+            <input type="submit" value="subscribe">
+        
+          </form>
+        </div>
+
+        <div class="left">
+          <h2>contact</h2>
+          <p>
+          info@email.com </br>
+          123 - 456 - 7890 </br>
+          123 some road, </br>
+          Toronto, ON 
+          </p>
+        </div>
+
+        <div class="right">
+          <h2>pages</h2>
+          <ul>
+            <li><a href=""><p>home</p></a></li>
+            <li><a href=""><p>about</p></a></li>
+            <li><a href=""><p>blog</p></a></li>
+            <li><a href=""><p>contact</p></a></li>
+          </ul>
+        </div>
+
+
+        <div class="center">
+          <h2>stay updated</h2>
+          <p>Subscribe to our newsletter to stay updated.</p>
+          <form action="">
+        
+            <input type="email" name="email" placeholder="email address" value="email address">
+        
+            <input type="submit" value="subscribe">
+        
+          </form>
+        </div>
+
+      </div>
+
+      <div class="toes">
+        <p>Copyright © 2018 HackerYou</p>
+      </div>
+
+    </footer>
+
+  </main>
+
+  <!-- javascript -->
+
+  <!-- mobile nav menu (js from W3)-->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+  <!-- animate on scroll (https://michalsnik.github.io/aos/) -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
