@@ -92,7 +92,7 @@ html{
 .fifth .content .contentText h2,
 .sixth .content h2, 
 .seventh .content h2{
-  font-family: 'PlayfairDisplay', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 4.2rem;
   font-weight: bold;
   color: var(--blackShade);
@@ -117,7 +117,7 @@ header{
 
 h2.logo, header nav li {
   text-transform: capitalize;
-  font-family: 'PlayfairDisplay', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 4.2rem;
   font-weight: bold;
   line-height: 1.5;
@@ -223,7 +223,7 @@ header nav{
 
 h1{
   display: block;
-  font-family: 'PlayfairDisplay', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 13rem;
   font-weight: bold;
   line-height: 1.5;
@@ -272,7 +272,7 @@ h1{
 }
 
 .fourth ul li ul a{
-  font-family: 'PlayfairDisplay', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: bold;
   text-transform: capitalize;
