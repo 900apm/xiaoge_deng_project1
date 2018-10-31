@@ -582,6 +582,7 @@ footer .centerHidden{
     float: none;
     margin: 0 auto;
     padding: 50px 0;
+    width: 100%;
   }
 
   .fourth ul li a p{
