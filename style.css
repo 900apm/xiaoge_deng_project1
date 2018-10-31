@@ -162,7 +162,7 @@ header nav{
   position: fixed;
   background-color: rgba(0,0,0, 0.9);
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .mobileOverlay a {
@@ -171,7 +171,7 @@ header nav{
   font-size: 3rem;
   text-decoration: none;
   color: darkgrey;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .mobileOverlay-content {
