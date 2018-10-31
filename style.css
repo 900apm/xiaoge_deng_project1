@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6{
 /* 1 rem = 10px */
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* fixed padding for desktop */
@@ -65,6 +66,12 @@ html{
   background-color: var(--accentColour);
   width: 214px;
   height: 50px;
+  transition: all 0.5s;
+}
+
+.button:hover{
+  transform: scale(1.15);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2); 
 }
 
 /* frequently used p for button */
@@ -131,21 +138,21 @@ header nav li{
   font-size: 1.8rem;
 }
 
+header nav li a{
+  transition: all 0.5s;
+}
+
+header nav li a:hover{
+  color: var(--accentColour);
+}
+
 header nav{
   float: right;
 }
 
 /* mobile overlay menu */
 
-.hiddenBurger{
-  display: none;
-  float: right;
-  font-size: 30px;
-  line-height: 1.61;
-  cursor: pointer;
-}
-
-.overlay{
+.mobileOverlay{
   z-index: 1;
   top: 0;
   left: 0;
@@ -157,7 +164,16 @@ header nav{
   transition: 0.3s;
 }
 
-.overlay-content {
+.mobileOverlay a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 3rem;
+  text-decoration: none;
+  color: darkgrey;
+  transition: 0.3s;
+}
+
+.mobileOverlay-content {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   position: relative;
@@ -167,25 +183,23 @@ header nav{
   margin-top: 30px;
 }
 
-.overlay a {
-  display: inline-block;
-  padding: 10px 0;
-  font-size: 3rem;
-  text-decoration: none;
-  color: darkgrey;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: var( --white);
-}
-
-.overlay .closebtn {
-  /* not in rem because closebtn should not resize */
+.mobileOverlay .closeButton {
   font-size: 50px;
   position: absolute;
   top: 0%;
   right: 10%;
+}
+
+.mobileOverlay a:hover, .mobileOverlay a:focus {
+  color: var( --white);
+}
+
+.hiddenBurger{
+  display: none;
+  float: right;
+  font-size: 30px;
+  line-height: 1.61;
+  cursor: pointer;
 }
 
 /* social media icons on right side */
@@ -202,6 +216,16 @@ header nav{
 
 .socialMedia li{
   margin: 10px 0;
+}
+
+.socialMedia ul li a{
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.socialMedia ul li a:hover{
+  color: var(--accentColour);
+  transform: scale(1.5);
 }
 
 .bigLogo{
@@ -269,14 +293,25 @@ h1{
   float: left;
   width: 25%;
   text-align: center;
+  transition: all 0.5s;
 }
 
-.fourth ul li ul a{
+.fourth ul li:hover{
+  transform: scale(1.2);
+}
+
+.fourth ul li ul a,
+.fourth ul li a p{
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: bold;
   text-transform: capitalize;
   color: var(--white);
+}
+
+.fourth ul li a p{
+  padding-top: 10px;
+  margin: 0;
 }
 
 /* fifth section */
@@ -390,6 +425,14 @@ footer .right h2{
 
 footer .right p{
   font-weight: normal;
+}
+
+footer .right a{
+  transition: all 0.5s;
+}
+
+footer .right a:hover{
+  color: var(--accentColour);
 }
 
 footer .center{
@@ -531,7 +574,7 @@ footer .centerHidden{
     padding: 50px 0;
   }
 
-  .fourth ul li ul{
+  .fourth ul li a p{
     padding-top: 20px;
   }
 

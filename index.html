@@ -20,7 +20,7 @@
 <body>
   <main>
 
-    <section class="first">
+    <section class="first" id="home">
 
         <header class=" wrapper clearfix">
 
@@ -29,21 +29,21 @@
           <!-- desktop nav -->
           <nav>
             <ul>
-              <li> <a href=""><p>home</p></a></li>
-              <li> <a href=""><p>about</p></a></li>
-              <li> <a href=""><p>blog</p></a></li>
-              <li> <a href=""><p>contact</p></a></li>
+              <li> <a href="#home"><p>home</p></a></li>
+              <li> <a href="#about"><p>about</p></a></li>
+              <li> <a href="#blog"><p>blog</p></a></li>
+              <li> <a href="#contact"><p>contact</p></a></li>
             </ul>
           </nav>
           
           <!-- mobile full screen menu -->
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul class="overlay-content">
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
+          <div class="mobileOverlay" id="mobileNav">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+            <ul class="mobileOverlay-content">
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#blog">blog</a></li>
+              <li><a href="#contact">contact</a></li>
               <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
               <li><a href=""><i class="fab fa-instagram"></i></a></li>
               <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
@@ -76,7 +76,7 @@
 
     </section>
 
-    <section class="second padder" data-aos="fade-up">
+    <section class="second padder" id="about" data-aos="fade-up">
       <h2>about shutter</h2>
 
       <p class="secondWrapper lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
@@ -99,29 +99,34 @@
       <ul class="wrapper clearfix">
 
         <li>
-          <a href=""><i class="far fa-images"></i></a>
-          <ul><a href="">gallery</a></ul>
+          <a href=""><i class="far fa-images"></i>
+            <p>gallery</p>
+          </a>
+
         </li>
 
         <li>
-          <a href=""><i class="fas fa-camera"></i></a>
-          <ul><a href="">photo tips</a></ul>
+          <a href=""><i class="fas fa-camera"></i>
+            <p>photo tips</p>
+          </a>
         </li>
 
         <li>
-          <a href=""><i class="far fa-image"></i></a>
-          <ul><a href="">about</a></ul>
+          <a href=""><i class="far fa-image"></i>
+            <p>about</p>
+          </a>
         </li>
 
         <li>
-          <a href=""><i class="fas fa-envelope"></i></a>
-          <ul><a href="">contact</a></ul>
+          <a href=""><i class="fas fa-envelope"></i>
+            <p>contact</p>
+          </a>
         </li>
 
       </ul>
     </section>
 
-    <section class="fifth wrapper padder" data-aos="fade-up">
+    <section class="fifth wrapper padder" id="blog" data-aos="fade-up">
       <div class="content clearfix">
 
         <figure>
@@ -181,7 +186,7 @@
   
     </section>
 
-    <footer data-aos="fade-up">
+    <footer id="contact" data-aos="fade-up">
 
       <div class="wrapper clearfix">
 
@@ -210,10 +215,10 @@
         <div class="right">
           <h2>pages</h2>
           <ul>
-            <li><a href=""><p>home</p></a></li>
-            <li><a href=""><p>about</p></a></li>
-            <li><a href=""><p>blog</p></a></li>
-            <li><a href=""><p>contact</p></a></li>
+            <li><a href="#home"><p>home</p></a></li>
+            <li><a href="#about"><p>about</p></a></li>
+            <li><a href="#blog"><p>blog</p></a></li>
+            <li><a href="#contact"><p>contact</p></a></li>
           </ul>
         </div>
 
@@ -245,11 +250,11 @@
   <!-- mobile nav menu (js from W3)-->
   <script>
     function openNav() {
-      document.getElementById("myNav").style.width = "100%";
+      document.getElementById("mobileNav").style.width = "100%";
     }
 
     function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
+      document.getElementById("mobileNav").style.width = "0%";
     }
   </script>
 
